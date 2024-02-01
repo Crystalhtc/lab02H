@@ -510,6 +510,7 @@ h3 {
     text-align: center;
     width: 100%;
     margin-top: 0.5rem;
+    gap: 1rem;
   }
 
   .news_item {
@@ -578,6 +579,9 @@ h3 {
   color: white;
 }
 
+.news_item_container {
+  gap: 1rem;
+}
 
 .paragraph {
   color: #939393;

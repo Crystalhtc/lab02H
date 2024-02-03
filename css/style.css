@@ -921,6 +921,9 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .footer_about {
+     width: 35vw;
+  }
   .footer_about_link {
     padding: 0;
     justify-content: flex-start;

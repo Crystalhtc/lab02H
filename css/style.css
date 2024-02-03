@@ -267,6 +267,7 @@ p {
 h3 {
   font-weight: 500;
   margin: 0;
+  font-size: 16px;
 }
 
 .header {
@@ -595,6 +596,7 @@ h3 {
 /* styling for the bottom half of the page (put them together later) */
 /* margin? no fixed size */
 /* change the icon to vector */
+/* fix the h3 font-size */
 
 /* for mobile and common code */
 
@@ -613,14 +615,15 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 1rem; */
+  margin: 1rem;
   background-color: #1eafde;
 }
 .project_item_intro_container {
   display: flex;
+  align-items: center;
   color: white;
-  padding: 0.5rem 1em;
   gap: 2.5em;
+  padding: 0.5rem;
 }
 .project_item_text_container {
   text-align: left;
@@ -628,8 +631,7 @@ h3 {
 .project_icon {
   background-color:#1596bd;
   fill: white;
-  padding: 0.5em 0.6em;
-  margin: 0.5em;
+  padding: 0.5em 0.7em;
 }
 
 /* other, clients */
@@ -642,40 +644,66 @@ h3 {
   background-color: #15232E;
   color: white;
 }
+.footer_content {
+  padding: 1rem;
+}
 .footer_staff {
   display: flex;
   align-items: center;
-  margin: 2rem 4rem;
+  margin: 1rem 0;
   gap: 1rem;
+}
+.footer_staff_image > img {
+  width: 10rem;
+  height: 10rem;
 }
 .h_line {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-.h_line_blue {
+.h_line_wide_blue {
   width: 10%;
   height: 0.07rem;
   background-color: #1596bd;
 }
-.h_line_lightblue {
+.h_line_wide_lightblue {
   width: 70%;
   height: 0.03rem;
-  background-color:#4caae4;
+  background-color:#4d5459;
 }
 .footer_about_text {
   display: none;
 }
 .footer_about_link {
-  margin: 1rem;
   display: flex;
   justify-content: center;
+  padding-top: 1rem;
+}
+.footer_about_link_icon{
+  fill: white;
+  width: 1.3rem;
+  height: 1.3rem;
+  padding: 1rem;
+  margin: 0.1rem;
+}
+.footer_about_link_facebook {
+  background-color: #527BC4;
+}
+.footer_about_link_google {
+  background-color: #E46146;
+}
+.footer_about_link_twitter {
+  background-color: #00AFE0;
+}
+.footer_about_link_instagram {
+  background-color: #F6669B;
+}
+.footer_about_link_signal {
+  background-color: #FCA401;
 }
 .footer_flickr, .footer_newsletter {
   display: none;
-}
-.footer_tweets {
-  margin: 2rem 4rem;
 }
 .footer_tweets_text {
   margin: 1rem;
@@ -715,27 +743,27 @@ h3 {
 .color_bar_green {
   background-color: #1dbe86;
   height: 2vh;
-  width: 7vw;
+  width: 12vw;
 }
 .color_bar_yellow {
   background-color:#fcbc31;
   height: 2vh;
-  width: 7vw;
+  width: 12vw;
 }
 .color_bar_red {
   background-color:#de6262;
   height: 2vh;
-  width: 7vw;
+  width: 12vw;
 }
 .color_bar_blue {
   background-color:#19b2de;
   height: 2vh;
-  width: 7vw;
+  width: 12vw;
 }
 .color_bar_darkblue {
   background-color:#166ba2;
   height: 2vh;
-  width: 7vw;
+  width: 12vw;
 }
 
 
@@ -780,6 +808,13 @@ h3 {
     padding: 2rem;
     gap: 1rem;
   }
+  .others_accordion_panel_icon_container {
+    background-color: #24C388;
+  }
+  .others_accordion_panel_icon {
+    stroke: white;
+    padding: 3rem;
+  }
   .others_accordion_title {
     cursor: pointer;
     padding: 1rem;
@@ -818,6 +853,24 @@ h3 {
     margin: 1rem;
     gap: 2rem;
   }
+  .others_tabs_icon {
+    height: 30px;
+    stroke: white;
+    padding: 15px 20px;
+  }
+  .others_tabs_icon_flask {
+    background-color: #D75F5E;
+  }
+  .others_tabs_icon_leaf {
+    background-color: #24C388;
+  }
+  .others_tabs_icon_laptop {
+    background-color: #FEB900;
+  }
+  .others_tabs_icon_community {
+    background-color: #852C99;
+  }
+
   /* clients */
   .clients {
     display: block;
@@ -833,17 +886,17 @@ h3 {
   }
 
   /* footer */
-  .footer_content {
-    margin: 2rem;
-  }
   .footer_content_items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   .footer_about {
-    margin: 2rem;
-    width: 35%;
+    width: 35vw;
+  }
+  .footer_about_link {
+    padding: 0;
+    justify-content: flex-start;
   }
   .arrow-down_green {
     width: 0; 
@@ -882,42 +935,66 @@ h3 {
     background-color:#1596bd;
   }
   .footer_about_text {
+    margin: 1rem 0;
     display: block;
   }
   .footer_flickr {
     display: block;
-    margin: 2rem;
-    width: 35%;
+    width: 35vw;
+  }
+  .footer_flickr_text{
+    margin: 1rem;
   }
   .footer_flickr_items{
     display: flex;
     flex-wrap: wrap;
-    gap: 0.05rem;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  .footer_flickr_image {
+    width: 30%;
+    height: auto;
   }
   .footer_tweets {
-    margin: 2rem;
-    width: 35%;
+    width: 35vw;
   }
   .footer_newsletter {
     display: block;
-    margin: 2rem;
-    width: 35%;
+    width: 35vw;
   }
-  .footer_newsletter_email {
-    background-color: #D7605F;
-    padding: 1rem 2rem;
+  .footer_newsletter_text {
+    margin: 1rem;
   }
-  .footer_newsletter_submit {
-    width: 3rem;
-    height: 3rem;
+  .footer_newsLetter_content {
+    margin: 1rem 0;
   }
-  .footer_newsletter_input{
+  .footer_newsletter_input {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 2rem;
+    width: 100%;
+  }
+  .footer_newsletter_email {
+    background-color: #D7605F;
+    border: none;
+    height: 100%;
+    padding: 0 1rem;
+  }
+  .footer_newsletter_submit_container {
+    background-color: #FFB800;
+    border: none;
+    height: 100%;
+    width: 2rem;
+  }
+  .footer_newsletter_submit_container > svg{
+    width: 20px;
+    height: 20px;
+    fill: white;
   }
   ::placeholder {
-    color: white;
+    color: rgb(220, 219, 219);
   }
   .color_bar {
     display: flex;
@@ -935,7 +1012,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin: 8rem;
+    margin: 0 8rem;
   }
   /* others */
   .others {
@@ -1003,6 +1080,11 @@ h3 {
     margin: 1rem;
     gap: 2rem;
   }
+  .others_tabs_icon {
+    height: 70px;
+    stroke: white;
+    padding: 0 25px;
+  }
   /* clients */
   .clients {
     display: block;
@@ -1018,16 +1100,23 @@ h3 {
   }
 
   /* footer */
-  .footer_content {
-    margin: 2rem;
+  .footer_staff {
+    margin: 1rem;
   }
   .footer_content_items {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 1rem;
   }
   .footer_about {
-    width: 15vw;
+    width: 20vw;
+  }
+  .footer_about_link_icon{
+    fill: white;
+    width: 1rem;
+    height: 1rem;
+    padding: 0.5rem;
   }
   .arrow-down_green {
     width: 0; 
@@ -1065,37 +1154,15 @@ h3 {
     height: 0.03rem;
     background-color:#1596bd;
   }
-  .footer_about_text {
-    display: block;
-  }
   .footer_flickr {
-    display: block;
-    width: 15vw;
-  }
-  .footer_flickr_items{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.05rem;
+    width: 20vw;
   }
   .footer_tweets {
-    width: 15vw;
+    width: 20vw;
   }
   .footer_newsletter {
     display: block;
-    width: 15vw;
-  }
-  .footer_newsletter_email {
-    background-color: #D7605F;
-    padding: 1rem 2rem;
-  }
-  .footer_newsletter_submit {
-    width: 3rem;
-    height: 3rem;
-  }
-  .footer_newsletter_input{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: 20vw;
   }
   ::placeholder {
     color: white;

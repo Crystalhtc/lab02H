@@ -542,12 +542,17 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
   background-color: #1eafde;
 }
+
+.projects_item_container {
+  gap: 1rem;
+}
+
 .projects {
   width: 100%;
 }
+
 .project_item_intro_container {
   display: flex;
   align-items: center;

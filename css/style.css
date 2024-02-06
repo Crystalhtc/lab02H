@@ -461,137 +461,6 @@ h3 {
   background-color: #eaeaea;
 }
 
-/* tablet size */
-
-@media screen and (min-width: 40em) {
-  .navbar {
-    justify-content: space-around;
-  }  
-
-  .hamburger_icon {
-    display: none;
-  }
-
-  .menu_item {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .banner {
-    display: flex;
-    justify-content: center;
-    background-color: #e9e7e7;
-    width: 100%;
-  }
-  
-  .banner_pic {
-  width: 90vw;
-  }
-  
-  .services_item_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    text-align: center;
-    margin-top: 0.5rem;
-  }
-
-  .services_item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem 0;
-    padding: 1rem;
-    text-align: center;
-    gap: 0;
-    width: 40%;
-  }
-
-  .services_item_text {
-    margin: 1rem 0;
-  }
-
-  .services_item svg {
-    width: 2rem;
-    height: 2rem;
-    padding: 1rem;
-  }
-
-  .news_item_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin-top: 0.5rem;
-    gap: 1rem;
-  }
-
-  .news_item {
-    display: flex;
-    flex-direction: column;
-    column-count: 2;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem 0;
-  }
-
-  .divider {
-    display: flex;
-    flex-direction: row;
-    /* margin: 2vw 7vw 0 7vw; */
-    width: 600px;
-    margin: 2rem auto 0 auto;
-  }
-  
-  .divider_blue {
-    width: 80%;
-    height: 0.1rem;
-    background-color: #1596bd;
-  }
-}
-
-/* desktop size */
-@media screen and (min-width: 64em) {
-  .news_item_extra {
-   display: none;
-  }  
-
-  .services_item_container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  }
-
-  .services_item {
-    width: 20%;
-  }
-
-  .divider {
-    display: flex;
-    flex-direction: row;
-    /* margin: 2vw 7vw 0 7vw; */
-    width: 900px;
-    margin: 2rem auto 0 auto;
-  }
-
-  .divider_blue {
-    width: 40%;
-    height: 0.1rem;
-    background-color: #1596bd;
-  }
-}
-
-
 .intro_title {
   display: flex;
   justify-content: center;
@@ -637,7 +506,6 @@ h3 {
 
 }
 
-
 .news_title {
   text-align: center;
 }
@@ -658,14 +526,6 @@ h3 {
 .intro_title_text > span {
   color: #1eafde;
 }
-
-
-/* styling for the bottom half of the page (put them together later) */
-/* margin? no fixed size */
-/* change the icon to vector */
-/* fix the h3 font-size */
-
-/* for mobile and common code */
 
 /* project */
 .projects_content {
@@ -837,8 +697,102 @@ h3 {
 }
 
 
-/* tablet */
-@media screen and (min-width: 40em){
+/* tablet size */
+
+@media screen and (min-width: 40em) {
+  .navbar {
+    justify-content: space-around;
+  }  
+
+  .hamburger_icon {
+    display: none;
+  }
+
+  .menu_item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    background-color: #e9e7e7;
+    width: 100%;
+  }
+  
+  .banner_pic {
+    width: 90vw;
+    }
+  
+  .services_item_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .services_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    text-align: center;
+    gap: 0;
+    width: 40%;
+  }
+
+  .services_item_text {
+    margin: 1rem 0;
+  }
+
+  .services_item svg {
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+  }
+
+  .news_item_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 0.5rem;
+    gap: 1rem;
+  }
+
+  .news_item {
+    display: flex;
+    flex-direction: column;
+    column-count: 2;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+  }
+
+  .divider {
+    display: flex;
+    flex-direction: row;
+    /* margin: 2vw 7vw 0 7vw; */
+    width: 600px;
+    margin: 2rem auto 0 auto;
+  }
+  
+  .divider_blue {
+    width: 80%;
+    height: 0.1rem;
+    background-color: #1596bd;
+  }
   /* project */
   .projects_item_container {
     display: flex;
@@ -848,7 +802,6 @@ h3 {
     justify-content: center;
     padding: 1rem;
     text-align: center;
-    /* width: 100%; */
     margin-top: 0.5rem;
   }
 
@@ -1025,7 +978,7 @@ h3 {
     background-color: #24C388;
   }
   .others_tabs_icon_laptop {
-    background-color: #FEB900;
+    background-color: #FEB901;
   }
   .others_tabs_icon_community {
     background-color: #852C99;
@@ -1075,12 +1028,12 @@ h3 {
     height: 0; 
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid yellow;
+    border-top: 5px solid #ffb901;
   }
   .h_line_yellow {
     width: 70%;
     height: 0.03rem;
-    background-color: yellow;
+    background-color: #ffb901;
   }
   .arrow-down_blue {
     width: 0; 
@@ -1143,7 +1096,7 @@ h3 {
     padding: 0 1rem;
   }
   .footer_newsletter_submit_container {
-    background-color: #FFB800;
+    background-color: #ffb901;
     border: none;
     height: 100%;
     width: 2rem;
@@ -1162,10 +1115,36 @@ h3 {
   }
 }
 
+/* desktop size */
+@media screen and (min-width: 64em) {
+  .news_item_extra {
+   display: none;
+  }  
 
+  .services_item_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  }
 
-/* desktop */
-@media screen and (min-width: 64em){
+  .services_item {
+    width: 20%;
+  }
+
+  .divider {
+    display: flex;
+    flex-direction: row;
+    /* margin: 2vw 7vw 0 7vw; */
+    width: 900px;
+    margin: 2rem auto 0 auto;
+  }
+
+  .divider_blue {
+    width: 40%;
+    height: 0.1rem;
+    background-color: #1596bd;
+  }
   .banner_list {
     position: absolute;
     left: 15vw;
@@ -1252,3 +1231,4 @@ h3 {
     width: 20vw;
   }
 }
+

@@ -1203,6 +1203,11 @@ h3 {
     flex-wrap: wrap;
     margin: 0 4rem;
   }
+  .projects_content {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
   /* others */
   .others {
     display: block;
